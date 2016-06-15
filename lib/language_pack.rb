@@ -22,7 +22,7 @@ module LanguagePack
       klass.use?
     end
 
-    puts "Pack: #{pack}"
+    #puts "Pack: #{pack}"
 
     pack ? pack.new(*args) : nil
   end
