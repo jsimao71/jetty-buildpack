@@ -17,9 +17,12 @@ module LanguagePack
   def self.detect(*args)
     Dir.chdir(args.first)
 
+    puts "LanguagePack detect"
     pack = [ JettyWeb, Java ].detect do |klass|
       klass.use?
     end
+
+    puts "Pack: {pack}"
 
     pack ? pack.new(*args) : nil
   end
