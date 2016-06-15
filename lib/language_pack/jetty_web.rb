@@ -23,6 +23,7 @@ module LanguagePack
 
     def compile
       Dir.chdir(build_path) do
+        puts "Jetty compile..."
         install_java
         install_jetty
         remove_jetty_files
