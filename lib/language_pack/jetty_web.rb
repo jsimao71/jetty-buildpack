@@ -36,6 +36,7 @@ module LanguagePack
     end
 
     def install_jetty
+      puts "Installing Jetty to #{jetty_dir}"
       FileUtils.mkdir_p jetty_dir
       jetty_tarball="#{jetty_dir}/#{JETTY_PACKAGE}"
 
